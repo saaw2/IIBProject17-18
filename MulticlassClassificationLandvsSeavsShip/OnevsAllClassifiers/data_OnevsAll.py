@@ -75,13 +75,15 @@ class myAugmentation(object):
 class dataProcess(object):
 
     def __init__(self, out_rows, out_cols, npy_path="npydata",
-                 aug_train_path="aug_train", aug_label_path="aug_label"):
+                 aug_train_path="aug_train", aug_label_path="aug_label",
+                 img_filename="openSeaSARData.tif"):
 
         self.out_rows = out_rows
         self.out_cols = out_cols
         self.npy_path = npy_path
         self.aug_train_path = aug_train_path
         self.aug_label_path = aug_label_path
+        self.img_filename = img_filename
 
     def create_imgs_train(self):
         subimg_dim = self.out_rows
@@ -91,12 +93,11 @@ class dataProcess(object):
 
         ############### data from open sea ###############
 
-        img_filename = "openSeaSARData.tif"
         subimg_count = int(5120 / subimg_dim * 5120 / subimg_dim)
         np.random.seed(0)
         test_indices = np.random.choice(subimg_count, size=int(subimg_count * 0.2), replace=False)
 
-        dataset = gdal.Open(img_filename, GA_ReadOnly)
+        dataset = gdal.Open(self.img_filename, GA_ReadOnly)
         xSize = dataset.RasterXSize
         ySize = dataset.RasterYSize
         bandCount = dataset.RasterCount
@@ -135,9 +136,9 @@ class dataProcess(object):
                                 bandNumber - 1]
                         band = dataset.GetRasterBand(3)
                         bandArray = band.ReadAsArray(xOffset, yOffset, subimg_dim, subimg_dim).astype(np.float32)
-                        test_img_array[0, :, :, 4] = bandArray
-                        test_img_array[0, :, :, 3] = 1.0 - bandArray
-                        test_img_array[0, :, :, 2].fill(0.0)
+                        test_img_array[0, :, :, 4] = bandArray          # ship mask
+                        test_img_array[0, :, :, 3] = 1.0 - bandArray    # sea mask
+                        test_img_array[0, :, :, 2].fill(0.0)            # land mask
 
                         test_img_array_list.append(test_img_array)
                         test_index += 1
