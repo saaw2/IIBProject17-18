@@ -80,6 +80,9 @@ class dataProcess(object):
 
     def create_imgs_train(self):
         img_filename = "LabelledSARdata.tif"
+        if not os.path.isfile(img_filename):
+            print('Please first download the file LabelledSARdata.tif from the googleDriveURL')
+            return -1
         target_file_path = self.npy_path
         subimg_dim = self.out_rows
         subimg_count = int(5120 / subimg_dim * 5120 / subimg_dim)
@@ -170,10 +173,10 @@ if __name__ == "__main__":
 
     mydata = dataProcess(128, 128)
     mydata.create_imgs_train()
-    aug = myAugmentation(128)
-    aug.Augmentation()
-    imgs_train, labels_train = mydata.load_train_data()
-    print('train imgs shape: ', imgs_train.shape, ', train labels shape: ', labels_train.shape)
-    imgs_test, labels_test = mydata.load_test_data()
-    print('test imgs shape: ', imgs_test.shape, 'test labels shape:', labels_test)
+    #aug = myAugmentation(128)
+    #aug.Augmentation()
+    #imgs_train, labels_train = mydata.load_train_data()
+    #print('train imgs shape: ', imgs_train.shape, ', train labels shape: ', labels_train.shape)
+    #imgs_test, labels_test = mydata.load_test_data()
+    #print('test imgs shape: ', imgs_test.shape, 'test labels shape:', labels_test)
 

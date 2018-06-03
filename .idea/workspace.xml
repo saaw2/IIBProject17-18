@@ -4,7 +4,9 @@
     <list id="c9a74ac9-c763-4b95-ace4-bf1511444a13" name="Uploading all CNN classifiers." comment="Uploading all CNN classifiers." />
     <list id="0ba407a4-ee02-4d2a-b323-935f4d605ecc" name="adding results from combined classification" comment="adding results from combined classification" />
     <list id="8bb397d2-4edb-4d11-831c-f6b1e49b1a59" name="adding exisitng files" comment="adding exisitng files" />
-    <list default="true" id="80fd1399-8133-4fb9-9c50-eba109e9cbbf" name="Default" comment="" />
+    <list default="true" id="80fd1399-8133-4fb9-9c50-eba109e9cbbf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/BinaryClassificationSeavsShip/data_binaryClassification.py" afterPath="$PROJECT_DIR$/BinaryClassificationSeavsShip/data_binaryClassification.py" />
+    </list>
     <ignored path="READMEold.md" />
     <ignored path="BinaryClassificationSeavsShip/aug_label/" />
     <ignored path="BinaryClassificationSeavsShip/aug_train/" />
@@ -69,8 +71,8 @@
       <file leaf-file-name="data_binaryClassification.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BinaryClassificationSeavsShip/data_binaryClassification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="65" column="33" lean-forward="true" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+            <state relative-caret-position="132">
+              <caret line="84" column="21" lean-forward="false" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -142,12 +144,12 @@
         <option value="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/MulticlassClassifier/test_predict_multiclassClassifier.py" />
         <option value="$PROJECT_DIR$/BinaryClassificationSeavsShip/trainCNN_binaryClassification.py" />
         <option value="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/MulticlassClassifier/trainCNN_multiclassClassifier.py" />
-        <option value="$PROJECT_DIR$/BinaryClassificationSeavsShip/data_binaryClassification.py" />
         <option value="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/OnevsAllClassifiers/trainCNN_OnevsAll.py" />
         <option value="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/OnevsAllClassifiers/test_predict_OnevsAll.py" />
         <option value="$PROJECT_DIR$/BinaryClassificationSeavsShip/test_binaryClassification.py" />
         <option value="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/MulticlassClassifier/data_multiclassClassifier.py" />
         <option value="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/OnevsAllClassifiers/data_OnevsAll.py" />
+        <option value="$PROJECT_DIR$/BinaryClassificationSeavsShip/data_binaryClassification.py" />
       </list>
     </option>
   </component>
@@ -227,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.data_binary (1)">
+  <component name="RunManager" selected="Python.data_binaryClassification">
     <configuration name="data_binary (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -264,6 +266,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="data_binaryClassification" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BinaryClassificationSeavsShip" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="IIBProject_17-18" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinaryClassificationSeavsShip/data_binaryClassification.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Nosetests in test_predict_categorical.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,16 +299,18 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/MulticlassClassification_Land_Sea_Ship/CombinedClassifier/test_predict_categorical.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.data_binary" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in test_predict_categorical.py" />
       <item index="2" class="java.lang.String" itemvalue="Python.data_binary (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.data_binaryClassification" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.data_binary (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in test_predict_categorical.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python.data_binary" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.data_binaryClassification" />
+        <item index="1" class="java.lang.String" itemvalue="Python.data_binary (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in test_predict_categorical.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python.data_binary" />
       </list>
     </recent_temporary>
   </component>
@@ -343,13 +365,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="715" y="-4" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6696697" sideWeight="0.22059953" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6696697" sideWeight="0.77940047" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -516,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BinaryClassificationSeavsShip/data_binaryClassification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="65" column="33" lean-forward="true" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        <state relative-caret-position="132">
+          <caret line="84" column="21" lean-forward="false" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
