@@ -43,7 +43,7 @@ The data used to obtain results presented in the report can be downloaded from [
 
 ### Pre-processing
 
-The images are 3-D volume tiff, you should transfer the stacks into arrays first by running the python Notebook CreateArraysForMulticlassImagesAndLabels.ipynb.
+The images are 3-D volume tiff, you should transfer the stacks into arrays first by running the [python Notebook](CreateArraysForMulticlassImagesAndLabels.ipynb).
 
 The data for training contains 34 128*128 images, which are far not enough to feed a deep learning neural network.
 To do data augumentation, an image deformation method was used, which was implemented in python using Keras.
