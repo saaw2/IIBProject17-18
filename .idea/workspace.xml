@@ -4,11 +4,7 @@
     <list id="c9a74ac9-c763-4b95-ace4-bf1511444a13" name="Uploading all CNN classifiers." comment="Uploading all CNN classifiers." />
     <list id="0ba407a4-ee02-4d2a-b323-935f4d605ecc" name="adding results from combined classification" comment="adding results from combined classification" />
     <list id="8bb397d2-4edb-4d11-831c-f6b1e49b1a59" name="adding exisitng files" comment="adding exisitng files" />
-    <list default="true" id="80fd1399-8133-4fb9-9c50-eba109e9cbbf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/BinaryClassificationSeavsShip/data_binaryClassification.py" afterPath="$PROJECT_DIR$/BinaryClassificationSeavsShip/data_binaryClassification.py" />
-      <change beforePath="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/MulticlassClassifier/data_multiclassClassifier.py" afterPath="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/MulticlassClassifier/data_multiclassClassifier.py" />
-      <change beforePath="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/OnevsAllClassifiers/data_OnevsAll.py" afterPath="$PROJECT_DIR$/MulticlassClassificationLandvsSeavsShip/OnevsAllClassifiers/data_OnevsAll.py" />
-    </list>
+    <list default="true" id="80fd1399-8133-4fb9-9c50-eba109e9cbbf" name="Default" comment="" />
     <ignored path="READMEold.md" />
     <ignored path="BinaryClassificationSeavsShip/aug_label/" />
     <ignored path="BinaryClassificationSeavsShip/aug_train/" />
