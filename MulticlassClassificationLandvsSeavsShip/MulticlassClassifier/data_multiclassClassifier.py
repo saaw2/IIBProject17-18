@@ -86,6 +86,15 @@ class dataProcess(object):
         self.img_filename = img_filename
 
     def create_imgs_train(self):
+        if not os.path.isfile(img_filename):
+            print('Please first download the file openSeaSARData.tif from the googleDriveURL')
+            return -1
+        if not os.path.isfile(self.npy_path + "/imgs.npy"):
+            print('Please first run the Jupyter Notebook CreateArraysForMulticlassImagesAndLabels.ipynb')
+            return -1
+        if not os.path.isfile(self.npy_path + "/labels.npy"):
+            print('Please first run the Jupyter Notebook CreateArraysForMulticlassImagesAndLabels.ipynb')
+            return -1
         subimg_dim = self.out_rows
 
         train_list = []

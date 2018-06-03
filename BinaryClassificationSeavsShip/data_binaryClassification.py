@@ -173,10 +173,10 @@ if __name__ == "__main__":
 
     mydata = dataProcess(128, 128)
     mydata.create_imgs_train()
-    #aug = myAugmentation(128)
-    #aug.Augmentation()
-    #imgs_train, labels_train = mydata.load_train_data()
-    #print('train imgs shape: ', imgs_train.shape, ', train labels shape: ', labels_train.shape)
-    #imgs_test, labels_test = mydata.load_test_data()
-    #print('test imgs shape: ', imgs_test.shape, 'test labels shape:', labels_test)
+    aug = myAugmentation(128)
+    aug.Augmentation()
+    imgs_train, labels_train = mydata.load_train_data()
+    print('train imgs shape: ', imgs_train.shape, ', train labels shape: ', labels_train.shape)
+    imgs_test, labels_test = mydata.load_test_data()
+    print('test imgs shape: ', imgs_test.shape, 'test labels shape:', labels_test)
 
