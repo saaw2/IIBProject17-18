@@ -9,26 +9,26 @@ The architecture was inspired by [U-Net: Convolutional Networks for Biomedical I
 ### Directory layout
 
     .
-    ├── DataProcessingPipeline_JupyterNotebook		# Python notebook to convert SAR data from .tiff into arrays
+    ├── DataProcessingPipeline_JupyterNotebook	# Python notebook to convert SAR data from .tiff into arrays
         ├── CreateArraysForMulticlassImagesAndLabels.ipynb
-    ├── BinaryClassificationSeavsShip                   # Using CNN for Binary Classification task: Sea vs Ships
-        ├── CNNweights.hdf5 				   # pre-trained CNN weights for sea-vs-ship classifer
-        ├── data_binaryClassification.py		   # data processing and augmentation
-        ├── trainCNN_binaryClassification.py		   # contains CNN model for training
-        ├── test_binaryClassification.py		   # test the performance of trained CNN model
-    ├── MulticlassClassificationLandvsSeavsShip		# Using CNN for Multiclass Classification task: Land vs Sea vs Ships
+    ├── BinaryClassificationSeavsShip		# Using CNN for Binary Classification task: Sea vs Ships
+        ├── CNNweights.hdf5				# pre-trained CNN weights for sea-vs-ship classifer
+        ├── data_binaryClassification.py		# data processing and augmentation
+        ├── trainCNN_binaryClassification.py		# contains CNN model for training
+        ├── test_binaryClassification.py		# test the performance of trained CNN model
+    ├── MulticlassClassificationLandvsSeavsShip	# Using CNN for Multiclass Classification task: Land vs Sea vs Ships
         ├── MulticlassClassifier
-            ├── CNNweights.hdf5 			   # pre-trained CNN weights for multiclass classifier
-            ├── data_multiclassClassifier.py		   # data processing and augmentation
-            ├── trainCNN_multiclassClassifier.py	   # contains CNN model for training
-            ├── test_predict_multiclassClassifier.py	   # test the performance of trained CNN model
+            ├── CNNweights.hdf5				# pre-trained CNN weights for multiclass classifier
+            ├── data_multiclassClassifier.py		# data processing and augmentation
+            ├── trainCNN_multiclassClassifier.py	# contains CNN model for training
+            ├── test_predict_multiclassClassifier.py	# test the performance of trained CNN model
         ├── OnevsAllClassifier
             ├── 0	# land class
-                ├── CNNweights.hdf5 				   # pre-trained CNN weights for land classifier
+                ├── CNNweights.hdf5 			# pre-trained CNN weights for land classifier
             ├── 1	# sea class
-                ├── CNNweights.hdf5 				   # pre-trained CNN weights for sea classifier
+                ├── CNNweights.hdf5 			# pre-trained CNN weights for sea classifier
             ├── 2	# ship class
-                ├── CNNweights.hdf5 				   # pre-trained CNN weights for ships classifier
+                ├── CNNweights.hdf5 			# pre-trained CNN weights for ships classifier
             ├── data_OnevsAll.py
             ├── trainCNN_OnevsAll.py
             ├── test_predict_OnevsAll.py
